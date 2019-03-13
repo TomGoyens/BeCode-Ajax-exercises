@@ -1,0 +1,19 @@
+.container{
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px #ddd;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px #ddd;
+  padding: 2%;
+}
+img{
+  margin: 1%;
+}
+blockquote{
+  margin: 25px;
+}
+body{
+  background-color: #eee;
+}
