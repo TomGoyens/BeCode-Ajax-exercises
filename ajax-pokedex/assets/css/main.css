@@ -1,0 +1,453 @@
+#wrapper {
+  clear: left;
+  float: left;
+  position: relative;
+  left: 50%;
+}
+
+#container{
+  display: flex;
+  float: left;
+  position: relative;
+  right: 50%;
+  margin: 10vh auto;
+}
+.flex{
+  display:flex;
+}
+
+.tapa-izq{
+   height: 455px;
+   width: 302px;
+   background-color:#c84544;
+   border-radius:15px 15px 0 15px;
+}
+.tapa-der{
+   height:355px;
+   width: 267px;
+   background-color:#a43837;
+   border-radius:0 15px 15px 0;
+   margin-top:100px;
+}
+.tapa-der:before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 50px;
+  top: -50px;
+  left: 0;
+  background-color:#a43837;
+  border-top-radius: 0;
+  border-top-right-radius: 100px;
+
+}
+.tapa-der:after{
+content: "";
+  background-color:#a43837;
+  display: block;
+  position: relative;
+  width: 69px;
+  height: 30px;
+  top: -69px;
+  left: 81px;
+  border-top-radius: 0;
+  transform: rotateZ(30deg);
+}
+.alrevez{
+ margin-top: 30px !important;
+ transform: scale(-1, 1);
+ width: 268px;
+ height: 355px;
+
+}
+.burbuja-blanca{
+  position: relative;
+  border-radius:100%;
+  background-color:white;
+  width:70px;
+  height:70px;
+  left: 10px;
+  top: 10px;
+}
+.adentro{
+  position: absolute;
+  margin-left: 302px;
+  transform: scale(0.9);
+  border-radius: 0 15px 15px 15px;
+  background-color:#c84544;
+}
+.adentro:after{
+  background-color:#c84544;
+}
+.adentro:before{
+  content: "";
+  display: block;
+  position: relative;
+  width: 110px;
+  height: 50px;
+  top: -50px;
+  left: 0;
+  background-color:#c84544;
+  border-top-radius: 0;
+  border-top-right-radius: 100px;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-left-radius: 15px;
+}
+.adentro-izq{
+  height: 320px;
+  background-color: #c84544;
+  width: 237px;
+  border-radius: 0 15px 15px 15px;
+  position: absolute;
+  top: 88px;
+  left: 18px;
+}
+.adentro-izq:before{
+  content: "";
+display: block;
+position: relative;
+width: 106px;
+height: 56px;
+top: -42px;
+left: 0;
+background-color: #c84544;
+border-top-radius: 0;
+border-top-right-radius: 100px;
+border-bottom-color: transparent;
+border-right-color: transparent;
+border-top-left-radius: 15px;
+
+}
+.adentro-izq:after{
+  content: "";
+    display: block;
+    position: relative;
+    width: 62px;
+    height: 22px;
+    top: -74px;
+    left: 71px;
+    border-top-radius: 0;
+    transform: rotateZ(30deg);
+    background-color: #c84544;
+}
+.burbuja-azul{
+  border-radius:100%;
+  background-color: #589dbb;
+  width:60px;
+  height:60px;
+  margin: 5px auto;
+}
+.burbuja-roja{
+  position: relative;
+  border-radius:100%;
+  background-color:#a43837;
+  width:20px;
+  height:20px;
+  top: 20px;
+  left: 30px;
+}
+.burbuja-amarilla{
+  position: relative;
+  border-radius:100%;
+  background-color:#c6bd1a;
+  width:20px;
+  height:20px;
+  top: 20px;
+  left: 40px;
+}
+.burbuja-verde{
+  position: relative;
+  border-radius:100%;
+  background-color:#25a046;
+  width:20px;
+  height:20px;
+  top: 20px;
+  left: 50px;
+}
+.rectangulo{
+ height: 405px;
+    width: 34px;
+    position: absolute;
+    top: 50px;
+    left: 268px;
+    background-color:#7d2f2e;
+}
+.rectangulo-pequenio{
+height: 24px;
+    width: 34px;
+    position: absolute;
+    top: 77px;
+    left: 268px;
+    background-color:#c84544;
+
+}
+.rec-abajo{
+  top: 414px;
+}
+.marco-pantalla{
+  height: 170px;
+    width: 189px;
+    background-color: white;
+    position: absolute;
+    top: 139px;
+    left: 40px;
+    border-radius: 5px 5px 5px 39px;
+}
+ img, #mainimg{
+  height: 113px;
+    width: 148px;
+    background-color: gray;
+    margin: 0 20px 0 20px;
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  color: white;
+  text-align: center;
+}
+
+.br-roja{
+  height: 10px;
+  width: 10px;
+  border-radius:100%;
+  background-color: gray;
+  margin: 5px 0 5px auto;
+  cursor: pointer;
+}
+.pegado{
+   margin: 5px auto 5px 5px;
+}
+.br-roja-abajo{
+  height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: gray;
+  margin: 8px 0 0 28px;
+}
+.rayas{
+    margin: 5px 21px auto auto;
+}
+.raya{
+  width: 18px;
+    border-bottom: 1px solid black;
+    margin: 4px;
+}
+.container-btns{
+  height: 5px;
+width: 110px;
+position: absolute;
+top: 323px;
+left: 67px;
+}
+.btn-plano{
+  margin: auto 5px;
+  height: 100%;
+  width: 100%;
+  border-radius:5px;
+  background-color:#63616e;
+}
+
+.btn-gris{
+ height: 30px;
+    position: absolute;
+    top: 342px;
+    width: 30px;
+    background-color:#63616e;
+    left: 42px;
+    border-radius: 100%;
+}
+.cuadro-verde{
+  height: 32px;
+position: absolute;
+top: 379px;
+width: 68px;
+background-color:#63616e;
+left: 86px;
+  border-radius: 5px;
+
+}
+
+.btn-cruz{
+  height: 18px;
+    position: absolute;
+    top: 379px;
+    width: 54px;
+    background-color:#63616e;
+    left: 177px;
+border-radius: 5px;
+}
+.btn-cruz:before{
+   content: "";
+display: block;
+position: relative;
+height: 18px;
+top: -18px;
+width: 18px;
+background-color:#63616e;
+left: 18px;
+border-radius: 5px 5px 0 0;
+
+}
+.btn-cruz:after{
+  content: "";
+    display: block;
+    position: relative;
+    height: 18px;
+    top: 0;
+
+   height: 18px;
+   left:18PX;
+width: 18px;
+  background-color:#63616e;
+    border-radius: 0 0 5px 5px;
+
+}
+.circulo-cruz{
+ height: 7px;
+    background-color:grey;
+    border-radius: 100%;
+    width: 7px;
+    top: 384px;
+    left: 201px;
+    position: absolute;
+}
+.contenido-izquierda-dentro{
+  position: absolute;
+  top: 0px;
+}
+.contenido-der{
+  height: 289px;
+width: 190px;
+position: absolute;
+
+top: 134px;
+left: 342px;
+}
+#pokemon{
+height: 80px;
+    width: 100%;
+    background-color:#63616e;
+    top: 144px;
+  border-radius:5px;
+  color: white;
+  text-align: center;
+  padding-top: 7.50px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.contenedor-cuadros{
+  height: 80px;
+    width: 100%;
+    top: 144px;
+    margin-top: 15px;
+}
+.ilera{
+  height: 40px;
+  width: 100%;
+}
+.cuadro{
+  height: 100%;
+  width: 100%;
+  background-color:#589dbb;
+  border: 1px solid white;
+  border-radius:5px;
+}
+.circulos{
+  height: 10px;
+  width: 50px;
+  margin-top:10px;
+}
+.cir-rojo{
+  height: 10px;
+  width: 10px;
+  border-radius:100%;
+  background-color:#a43837;
+  margin: 0 auto;
+}
+.btns-gris{
+  height: 10px;
+  width: 90px;
+  margin-top:10px;
+  margin-left:45px;
+}
+.btn-gris-cuad{
+  height: 10px;
+  width: 40px;
+  background-color:#63616e;
+  margin: 0 auto;
+}
+.contenedor-cuad-blancos{
+  height: 40px;
+  width: 100%;
+
+  margin-top:8px;
+}
+.cuadro-blanco{
+  height: 30px;
+  width: 30px;
+  background-color:white;
+  border-radius:5px;
+  border:1px solid #63616e;
+}
+.cir-amar-cuad-blan{
+  height: 30px;
+  width: 30px;
+  background-color:#c8bf1b;
+  margin-left:90px;
+  border-radius:100%;
+}
+.btns-grises-grandes{
+  height: 30px;
+  width: 100%;
+  margin-top:8px;
+}
+.cuadro-gris-grande{
+  height: 100%;
+  width: 190px;
+  background-color:#63616e;
+  border-radius:5px;
+  margin: 0 auto;
+}
+
+#abilities{
+  width: 100%;
+  margin-top: -50px;
+  color: white;
+  font-size: 10px;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+}
+
+#pokemonid{
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preevo{
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.left{
+  position: absolute;
+  left: 5px;
+  margin: 5px 0;
+}
+.right{
+  width: 50%;
+  text-align: left;
+  position: absolute;
+  right: 5px;
+  margin: 5px 0;
+}
